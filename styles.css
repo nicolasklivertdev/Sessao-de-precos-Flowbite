@@ -6,18 +6,176 @@
     border: 0;
 }
 
+body {
+    background-color: rgb(17, 24, 39);
+}
+
 .container {
-    width: 1280px;
+    margin: auto;
+    width: 1349px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 6rem 1rem;
     background-color: rgb(17, 24, 39);
 }
 
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 75px;
+    max-width: 768px;
+    width: 100%;
     color: white;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+header p {
+    font-size: 21px;
+    line-height: 28px;
+    color: rgb(156, 163, 175);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.starter, .premium, .enterprise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    border: 1px solid rgb(55, 65, 81);
+    border-radius: .5rem;
+    max-width: 36rem;
+    background-color: rgb(31, 41, 55);
+    color: white;
+}
+
+.title {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.price {
+    margin-bottom: 1rem;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.starter p, .premium p, .enterprise p {
+    margin-bottom: .25rem;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(156 163 175);
+}
+
+.annual-plan {
+    display: flex;
+    gap: 8px;
+}
+
+.annual-plan a {
+    color: rgb(59 130 246);
+}
+
+a {
+    pointer-events: all;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:focus {
+    pointer-events: none;
+}
+
+.começar {
+    margin: 32px 0;
+    padding: 10px 20px;
+    border-radius: .5rem;
+    font-size: 14px;
+    font-weight: 500;
+    width: 323.328px;
+    background-color: rgb(75, 85, 99);
+    color: white;
+}
+
+.começar:hover {
+    cursor: pointer;
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    width: 300px;
+    gap: 8px;
+}
+
+.list svg {
+    flex-shrink: 0;
+    width: 1.25rem;
+    color: rgb(156, 163, 175);
+}
+
+.list p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.line {
+    text-decoration-line: line-through;
+}
+
+#line svg, #line p {
+    color: #72777a;
+}
+
+.premium {
+    border-color: rgb(59 130 246);
+}
+
+.premium span {
+    margin-bottom: .5rem;
+    padding: 4px 12px;
+    border-radius: .25rem;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgba(30, 82, 195, 0.49);
+    color: rgb(147, 197, 253);
+}
+
+.premium button {
+    background-color: rgb(37 99 235);
+}
+
+@media screen and (min-width: 1280px) {
+    section {
+        gap: 2.5rem;
+    }
+
+    .starter, .premium, .enterprise {
+        max-width: 32rem;
+    }
 }
