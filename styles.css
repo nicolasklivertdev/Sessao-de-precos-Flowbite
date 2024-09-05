@@ -7,12 +7,14 @@
 }
 
 body {
+    overflow-x: hidden;
     background-color: rgb(17, 24, 39);
 }
 
 .container {
     margin: auto;
-    width: 1349px;
+    padding: 0 16px;
+    max-width: 1280px;
 }
 
 .content {
@@ -72,7 +74,7 @@ section {
 
 .price {
     margin-bottom: 1rem;
-    font-size: 48px;
+    font-size: 49px;
     font-weight: 700;
 }
 
@@ -98,6 +100,7 @@ a {
 
 a:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
 
 a:focus {
@@ -117,6 +120,7 @@ a:focus {
 
 .começar:hover {
     cursor: pointer;
+    background-color: rgb(107, 116, 128);
 }
 
 .lists {
@@ -168,6 +172,87 @@ a:focus {
 
 .premium button {
     background-color: rgb(37 99 235);
+}
+
+.premium button:hover {
+    background-color: rgb(33, 74, 211);;
+}
+
+@media screen and (max-width:1278.99px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .starter, .premium ,.enterprise {
+        max-width: 526px !important;
+        width: 100%;
+    }
+
+    .list {
+        white-space: nowrap;
+        max-width: 100% !important;
+        width: 100%;
+    }
+
+    .title {
+        margin-bottom: 0.4rem;
+        font-size: 26px;
+    }
+    
+    .price {
+        margin-bottom: 0.7rem;
+    }
+    
+    .starter p, .premium p, .enterprise p {
+        margin-bottom: .25rem;
+        font-size: 17px;
+    }
+
+    .annual-plan {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+    .começar {
+        margin-bottom: 19px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1022px) {
+    .content {
+        padding: 3.5rem 0;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .content {
+        padding: 1.5rem 0;
+    }
+
+    header h1 {
+        margin-bottom: 0.7rem;
+        font-size: 31px;
+    }
+    
+    header p {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 622px) {
+    section {
+        padding: 0 1.55rem;
+    }
+    
+    .começar, .list {
+        white-space: wrap;
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
